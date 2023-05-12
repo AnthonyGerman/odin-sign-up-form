@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @font-face {
@@ -34,4 +35,82 @@ img {
     font-family: Norse-Bold;
     color: white;
     font-size: 128px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main > * {
+    flex: 1;
+}
+
+.one, .three {
+    background-color: rgb(240, 240, 240);
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-size: 32px;
+    padding: 20px;
+}
+
+.top-text {
+    width: 70%;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    font-size: 32px;
+}
+
+form {
+    font-size: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.first-half, .second-half {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.first-half > *, .second-half > * {
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus {
+    position: relative;
+    outline-color: blue;
+    outline-width: 1px;
+    box-shadow: 0, 0, 50px, black;
+}
+
+input {
+    height: 25px;
+}
+
+.three {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
+    border: none;
 }
